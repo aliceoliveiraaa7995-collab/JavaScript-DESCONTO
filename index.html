@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESCONTO | ALICE ANTUNES</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3e8ff;
+    }
+
+    #root {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .card-formulario {
+      width: 100%;
+      max-width: 400px;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(124, 58, 237, 0.12);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      box-sizing: border-box;
+    }
+
+    .card-formulario h2 {
+      margin: 0 0 10px 0;
+      color: #5b21b6;
+      font-size: 1.25rem;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .card-formulario input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #e9d5ff;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      outline: none;
+      box-sizing: border-box;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .card-formulario input:focus {
+      border-color: #7c3aed;
+      box-shadow: 0 0 6px rgba(124, 58, 237, 0.25);
+    }
+
+    .card-formulario button {
+      width: 100%;
+      padding: 12px;
+      background-color: #7c3aed;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .card-formulario button:hover {
+      background-color: #6d28d9;
+    }
+
+    .Resultado {
+      margin-top: 10px;
+      padding: 16px;
+      background-color: #faf5ff;
+      border-left: 5px solid #7c3aed;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .Resultado p {
+      margin: 0;
+      color: #4c1d95;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="card-formulario">
+      <h2>DESCONTO | ALICE ANTUNES</h2>
+    <!--TYPE: NÚMEROS | STEP 0.1: 1 CASA DECIMAL | PLACEHOLDER: MENSAGEM EXIBIDA NA TELA-->
+      <input id="ValorCompra" type="number" step="0.01" placeholder="Digite o valor da compra">
+    <!--BOTÃO QUE ACIONA O CÁLCULO DA MÉDIA-->
+      <button id="btnCalcular">Calcular desconto</button>
+    <!--CAIXA DE TEXTO PARA EXIBIR A SITUAÇÃO DO ALUNO-->
+      <div class="Resultado">
+        <p id="resultado">Informe o valor da compra e clique em Calcular.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="desconto.js"></script>
+</body>
+</html>
